@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="./Css/styles.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./imagenes/cupcoffe.png">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./info_personal.html">Información Personal</a></li>
+                <li><a href="./info_academica.html">Información Académica</a></li>
+                <li><a href="./experiencia.html">Experiencia</a></li>
+                <li><a href="./otros.html">Otros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <h1>Datos de contacto</h1>
+        <form action="#" method="post">
+            <fieldset class="c1">
+                <legend>Persona de Contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos"><br><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" style="width: 50px;"><br><br>
+                    <label for="telefonomovil">Telefono Movil:</label>
+                    <input type="text" id="telefonomovil" name="movil"><br><br>
+                    <label for="fijo">Telefono Fijo:</label>
+                    <input type="text" id="fijo" name="fijo"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+            </fieldset>
+            <fieldset class="c2">
+                <legend>Género</legend>
+                <select name="genero">
+                    <option value="noindica" selected>----------</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </fieldset>
+            <fieldset class="c3">
+                <legend>Datos Empresa</legend>
+                <label for="nombreem">Nombre:</label>
+                <input type="text" id="nombreem" name="nombreem"><br><br>
+                <label for="direccion">Tipo de vía:</label>
+                <input type="radio" name="tipovia" value="calle" checked>Calle
+                <input type="radio" name="tipovia" value="avenida">Avenida
+                <input type="radio" name="tipovia" value="carretera">Carretera
+                <input type="radio" name="tipovia" value="travesia">Travesía<br><br>
+                <label for="nombrecall">Dirección:</label>
+                <input type="text" id="nombrecall" name="nombrecall" style= "width:300px "><br><br>
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numcall" style="width: 70px"><br><br>
+                <label for="Poblacion">Población:</label>
+                <input type="text" id="Poblacion" name="poblacion"><br>
+                <label for="provincia">Provincía:</label>
+                <input type="text" id="provincia" name="provincia"><br><br>
+                <label for="especialidad">Especialidad Laboral:</label><br><br>
+                <input type="checkbox" name="marketing">Marketing
+                <input type="checkbox" name="comercio">Comercio
+                <input type="checkbox" name="software">Software<br><br>
+                <input type="checkbox" name="ventas">Ventas
+                <input type="checkbox" name="post_venta">Post-venta
+                <input type="checkbox" name="hardware">Hardware<br><br>
+                <label for="masdatos">Otros datos a añadir:</label><br>
+                <textarea id="masdatos" rows="4" cols="50"></textarea>
+            </fieldset>
+            <fieldset class="c4">
+                <legend style="text-align: left;">Enviar datos</legend>
+                <input type="submit" class="botonsubmit" value="Enviar formulario">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p><a href="https://www.pokemon.com/es/pokedex/pikachu"><small>Derechos Reservados</small></a></p>
+        <p><a href="./contacto.html">Contacto</a></p>
+    </footer>
+</body>
+</html>
